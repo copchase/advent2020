@@ -39,6 +39,8 @@ public class PasswordPhilosophyTwoOne {
 
                 s = reader.readLine();
             }
+
+            reader.close();
         } catch (IOException e) {
             e.printStackTrace();
         }

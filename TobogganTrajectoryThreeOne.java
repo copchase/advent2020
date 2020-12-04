@@ -17,18 +17,22 @@ public class TobogganTrajectoryThreeOne {
         int count = 0;
 
         try {
+            reader.readLine();
             String road = reader.readLine();
-            int width = road.length() - 1;
+            int width = road.length();
 
             while (road != null) {
-                int position = (((row + 1) * delta)) % width;
-                
+                int position = ((row + 1) * delta) % width;
+
                 if (road.charAt(position) == '#') {
                     count++;
                 }
 
                 row++;
+                road = reader.readLine();
             }
+
+            reader.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
