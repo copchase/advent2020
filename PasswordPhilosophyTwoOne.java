@@ -31,7 +31,7 @@ public class PasswordPhilosophyTwoOne {
                             letterCount++;
                         }
                     }
-                    
+
                     if (letterCount >= lowerLimit && letterCount <= upperLimit) {
                         count++;
                     }
