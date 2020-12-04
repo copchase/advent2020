@@ -24,7 +24,6 @@ public class PasswordPhilosophyTwoTwo {
                 char letter = parts[1].charAt(0);
                 String password = parts[2];
 
-
                 if ((password.charAt(idxA) == letter) ^ (password.charAt(idxB) == letter)) {
                     count++;
                 }
